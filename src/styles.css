@@ -2,3 +2,114 @@
 body {
     font-family: 'Roboto Flex', sans-serif;
 }
+
+:root {
+    --switch1-theme: #000;
+    --switch2-theme: #fff;
+    --theme-color: #f5cb5c;
+    --text-theme: #14213d;
+}
+
+.main-section {
+    min-height: 100vh;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+/* Styles to control reveal on scroll */
+.reveal {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    #desktop-title {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .typewriter h1 {
+        font-size: 2.3em;
+    }
+
+    .project-title {
+        font-weight: normal;
+    }
+
+    .about-text {
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+
+    .skill-section-title {
+        font-size: 1.8em;
+    }
+
+    .skills-icons img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 2%;
+    }
+
+    #skills-icon-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20% !important;
+    }
+
+
+    #hero-container-section::before {
+        background-attachment: scroll;
+        opacity: 1;
+    }
+
+    .reveal {
+        transition: all 1.2s ease;
+    }
+
+    #email-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    #about-me-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .typewriter h1,
+    .section-title {
+        font-size: 3rem;
+    }
+
+    #about-me-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
