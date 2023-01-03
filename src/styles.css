@@ -21,7 +21,7 @@ body {
 }
 
 /* Styles to control reveal on scroll */
-.reveal {
+/* .reveal {
     position: relative;
     transform: translateY(200px);
     opacity: 0;
@@ -31,7 +31,7 @@ body {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
-}
+} */
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
     #desktop-title {
